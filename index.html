@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+  <div id="nav">
+    <img
+      src="data:image/png;base64,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"
+      alt="">
+    <h4>TOPTRACER RANGE</h4>
+    <h4>Golf Lessons</h4>
+    <h4>Adventure Golf</h4>
+    <h4>Coffee Shop</h4>
+    <h4>Leagues</h4>
+  </div>
+  <div id="curosr"></div>
+  <div id="cursor-blur"></div>
+  <iframe src="https://www.youtube.com/embed/snz3Ww6laMQ" frameborder="0" allowfullscreen muted></iframe>
+  <div id="main">
+    <div id="page1">
+      <h1>EAT. DRINK. PLAY.</h1>
+      <h2>WELCOME TO SIDCUP FAMILY GOLF!</h2>
+      <P>Sidcup Family Golf is a multipurpose golf facility located in Sidcup. South East London. Passionate about
+        technology. player development and making golf fun and accessible to everyone.</P>
+    </div>
+
+    <div id="page2">
+      <div id="scroller">
+        <div class="scroller-in">
+          <h4>TOPTRACER RANGE</h4>
+          <h4>Golf Lessons</h4>
+          <h4>Adventure Golf</h4>
+          <h4>Coffee Shop</h4>
+          <h4>Leagues</h4>
+        </div>
+        <div class="scroller-in">
+          <h4>TOPTRACER RANGE</h4>
+          <h4>Golf Lessons</h4>
+          <h4>Adventure Golf</h4>
+          <h4>Coffee Shop</h4>
+          <h4>Leagues</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+    integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+    integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
