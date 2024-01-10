@@ -45,6 +45,7 @@ html, body {
 
 #nav img{
   height: 75px;
+  /* mix-blend-mode: color-burn; */
 }
 
 #nav h4 {
@@ -52,7 +53,7 @@ html, body {
   font-weight: 500;
 }
 
-iframe {
+video {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -107,7 +108,7 @@ iframe {
 }
 
 #page2 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   z-index: 10;
 }
@@ -156,4 +157,70 @@ iframe {
   to{
     transform: translateX(-100%);
   }
+}
+
+#about-us {
+  height: 40vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+  position: relative;
+}
+
+#about-us img {
+  height: 220px;
+  width: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+#about-us-in {
+  width: 40%;
+  text-align: center;
+}
+
+#about-us-in h3 {
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+#about-us-in p {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#cards-container {
+  /* background-color: red; */
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+  z-index: 10;
+}
+
+.card {
+  height: 80%;
+  width: 24%;
+  /* background-color: blue; */
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+#card1 {
+  background-image: url(https://raw.githubusercontent.com/saarthack/sidcup-family-golf/main/Assests/card1.avif);
+}
+
+#card2 {
+  background-image: url(https://raw.githubusercontent.com/saarthack/sidcup-family-golf/main/Assests/card2.webp);
+}
+
+#card3 {
+  background-image: url(https://raw.githubusercontent.com/saarthack/sidcup-family-golf/main/Assests/card3.avif);
 }
